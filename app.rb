@@ -82,7 +82,7 @@ while continue == true
         system("clear")
         puts "#{player1_name}... LOOOOOOOOOOOOOOOOOOSER !!!! 🤣".colorize(:white).on_red.underline
         sleep 2
-        system("clear")
+
      end
     game.draw
       if game.draw == true 

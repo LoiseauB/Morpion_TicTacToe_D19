@@ -17,12 +17,16 @@ class Game
     print "-> "
     choice = gets.chomp
     while choice.capitalize != "A1" && choice.capitalize != "A2" && choice.capitalize != "A3" && choice.capitalize != "B1" && choice.capitalize != "B2" && choice.capitalize != "B3" && choice.capitalize != "C1" && choice.capitalize != "C2" && choice.capitalize != "C3"
+        puts "Mais tié con comme la Lune et jamais une eclipse toi ! 😤"
+        puts
         puts "Ceci n'est pas une case de morpion..."
         puts " Où souhaites-tu jouer ?"
         print "-> "
         choice = gets.chomp
     end
     while @board_game[choice.capitalize] != ' '
+        puts "Mais tié con comme la Lune et jamais une eclipse toi ! 😤"
+        puts
         puts "Cette case est déjà prise..."
         puts " Où souhaites-tu jouer ?"
         print "-> "
