@@ -56,12 +56,19 @@ while continue == true
     game.victory_x
       if game.victory_x == true
         puts
-        puts "BRAVO!! Tu as gagné #{player1_name}!  ❌🏆".red
-        puts
+        puts "BRAVO!! Tu as gagné #{player1_name}!  ❌🏆".
+        sleep 1
+        system("clear")
+        puts "#{player2_name}... LOOOOOOOOOOOOOOOOOOSER !!!! 🤣".colorize(:white).on_red.underline
+        sleep 2
+        system("clear")
       end
     game.draw
       if game.draw == true 
+        puts "Vous êtes aussi stupide l'un que l'autre... 😫".colorize(:black).on_green.underline
         puts "MATCH NUL!! Recommencez un partie pour vous départager!".colorize(:black).on_green.underline
+        sleep 2
+        system("clear")
       end
     game.over?
       break if game.over? == true
@@ -71,11 +78,18 @@ while continue == true
       if game.victory_o == true
         puts
         puts "BRAVO!! Tu as gagné #{player2_name}!  🔵🏆".blue
-        puts
+        sleep 1
+        system("clear")
+        puts "#{player1_name}... LOOOOOOOOOOOOOOOOOOSER !!!! 🤣".colorize(:white).on_red.underline
+        sleep 2
+        system("clear")
      end
     game.draw
       if game.draw == true 
+        puts "Vous êtes aussi stupide l'un que l'autre... 😫".colorize(:black).on_green.underline
         puts "MATCH NUL!! Recommencez une partie pour vous départager!".colorize(:black).on_green.underline
+        sleep 2
+        system("clear")
       end
     game.over?
   end
