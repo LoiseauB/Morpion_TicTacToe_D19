@@ -56,7 +56,7 @@ while continue == true
     game.victory_x
       if game.victory_x == true
         puts
-        puts "BRAVO!! Tu as gagné #{player1_name}!  ❌🏆".
+        puts "BRAVO!! Tu as gagné #{player1_name}!  ❌🏆"
         sleep 1
         system("clear")
         puts "#{player2_name}... LOOOOOOOOOOOOOOOOOOSER !!!! 🤣".colorize(:white).on_red.underline
