@@ -11,13 +11,13 @@ class BoardGame
   
   def display_board #affiche la grille 
     puts
-    puts " A   B   C "
+    puts "          A   B   C "
     puts
-    puts " #{@board['A1']} | #{@board['B1']} | #{@board['C1']}    1" 
-    puts '---+---+---'
-    puts " #{@board['A2']} | #{@board['B2']} | #{@board['C2']}    2"
-    puts '---+---+--- '
-    puts " #{@board['A3']} | #{@board['B3']} | #{@board['C3']}    3"
+    puts "          #{@board['A1']} | #{@board['B1']} | #{@board['C1']}    1"
+    puts '         ---+---+---'.magenta
+    puts "          #{@board['A2']} | #{@board['B2']} | #{@board['C2']}    2"
+    puts '         ---+---+--- '.magenta
+    puts "          #{@board['A3']} | #{@board['B3']} | #{@board['C3']}    3"
     puts
   end
 end

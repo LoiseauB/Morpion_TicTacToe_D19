@@ -11,11 +11,11 @@ class Game
   def play_a_round(player)
     @current_game.display_board
     puts
-    puts "#{player.name} à toi de tout défoncer ! 😈"
+    puts "#{player.sign} #{player.name} #{player.sign} à toi de tout défoncer !  😈"
     puts
-    puts " Dans quelle case ?"
+    puts " Dans quelle case?"
     print "-> "
-    @choice = gets.chomp
+    choice = gets.chomp
     while choice.capitalize != "A1" && choice.capitalize != "A2" && choice.capitalize != "A3" && choice.capitalize != "B1" && choice.capitalize != "B2" && choice.capitalize != "B3" && choice.capitalize != "C1" && choice.capitalize != "C2" && choice.capitalize != "C3"
         puts "Ceci n'est pas une case de morpion..."
         puts " Où souhaites-tu jouer ?"
@@ -29,7 +29,7 @@ class Game
         choice = gets.chomp
     end
 
-    @current_game.update_board(@choice, player)
+    @current_game.update_board(choice, player)
     
     @turn_count += 1
     system("clear")
@@ -39,41 +39,25 @@ class Game
   def victory_x #definir les cas de victoires pour le player "x"
     
 
-  x = "x"
+  x = "x".red
   #verticales
     if @board_game['A1'] == x && @board_game['A2'] == x && @board_game['A3'] == x
-      puts "     *** YOU ARE THE WINNER ! ***"
-      puts " "
       return true
     elsif @board_game['B1'] == x && @board_game['B2'] == x && @board_game['B3'] == x 
-      puts "     *** YOU ARE THE WINNER ! ***"
-      puts " "
       return true
     elsif @board_game['C1'] == x && @board_game['C2'] == x && @board_game['C3'] == x 
-      puts "     *** YOU ARE THE WINNER ! ***"
-      puts " "
       return true
        #horizontale
     elsif @board_game['A1'] == x && @board_game['B1'] == x && @board_game['C1'] == x
-      puts "     *** YOU ARE THE WINNER ! ***"
-      puts " "
       return true
     elsif @board_game['A2'] == x && @board_game['B2'] == x && @board_game['C2'] == x
-      puts "     *** YOU ARE THE WINNER ! ***"
-      puts " "
       return true
     elsif @board_game['A3'] == x && @board_game['B3'] == x && @board_game['C3'] == x
-      puts "     *** YOU ARE THE WINNER ! ***"
-      puts " "
       return true
       #diagonales
     elsif @board_game['A1'] == x && @board_game['B2'] == x && @board_game['C3'] == x
-      puts "     *** YOU ARE THE WINNER ! ***"
-      puts " "
       return true
     elsif @board_game['A3'] == x && @board_game['B2'] == x && @board_game['C1'] == x
-      puts "     *** YOU ARE THE WINNER ! ***"
-      puts " "
       return true
     else
       return false
@@ -82,41 +66,25 @@ class Game
 
   def victory_o #definir les cas de victoires pour le player "o"
     
-    o = "o"
+    o = "o".blue
     #verticales
     if @board_game['A1'] == o && @board_game['A2'] == o && @board_game['A3'] == o
-      puts "     *** YOU ARE THE WINNER ! ***"
-      puts " "
       return true
     elsif @board_game['B1'] == o && @board_game['B2'] == o && @board_game['B3'] == o
-      puts "     *** YOU ARE THE WINNER ! ***"
-      puts " "
       return true
     elsif @board_game['C1'] == o && @board_game['C2'] == o && @board_game['C3'] == o
-      puts "     *** YOU ARE THE WINNER ! ***"
-      puts " "
       return true
       #horizontales
     elsif @board_game['A1'] == o && @board_game['B1'] == o && @board_game['C1'] == o
-      puts "     *** YOU ARE THE WINNER ! ***"
-      puts " "
       return true
     elsif @board_game['A2'] == o && @board_game['B2'] == o && @board_game['C2'] == o
-      puts "     *** YOU ARE THE WINNER ! ***"
-      puts " "
       return true
     elsif @board_game['A3'] == o && @board_game['B3'] == o && @board_game['C3'] == o
-      puts "     *** YOU ARE THE WINNER ! ***"
-      puts " "
       return true
       #diagonales
     elsif @board_game['A1'] == o && @board_game['B2'] == o && @board_game['C3'] == o
-      puts "     *** YOU ARE THE WINNER ! ***"
-      puts " "
       return true
     elsif @board_game['A3'] == o && @board_game['B2'] == o && @board_game['C1'] == o
-      puts "     *** YOU ARE THE WINNER ! ***"
-      puts " "
       return true
     else 
       return  false
@@ -132,7 +100,6 @@ class Game
 
   def full?
     if @turn_count == 9
-      puts "La grille est pleine !"
       return true
     else
       return false
@@ -141,7 +108,6 @@ class Game
 
   def over?
     if victory_o == true || victory_x == true || draw == true
-      puts "Fin du jeu"
       return true
     else
       return false
