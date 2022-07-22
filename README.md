@@ -1,15 +1,14 @@
 # Morpion-TicTacToe-
 
-10 days Ruby notions and here we are, creating the infamous TicTacToe game !
+10 days Ruby notions later and here we are, creating the infamous TicTacToe game !
 It consists of making a sequence of three symbols in either a row, column or diagonal in a 3x3 board, using Ruby OOP principles.
 
 
 ![](https://media.giphy.com/media/Yj97rLWiH29Hi/giphy.gif)
 
-Create based on the TicTacToe game with Ruby notions learnt since 10 days
 
-Ruby app to play the legendary TicTacToe, developed in peer programming 
-with a part of the the Vocal_15 team [@Bretchaa](https://github.com/Bretchaa) / [@linahello](https://github.com/linahello) / [@LoiseauB](https://github.com/LoiseauB) !
+This project was developed in peer programming with a part of the the Vocal_15 team : [@Bretchaa](https://github.com/Bretchaa) / [@linahello](https://github.com/linahello) / [@LoiseauB](https://github.com/LoiseauB) !
+This was a project to do on day 4 of the second week of our Fullstack Bootcamp (Hi THP !)
 
 ~~ https://github.com/linahello/Morpion-TicTacToe-.git ~~
 
@@ -26,6 +25,9 @@ Two players :
 * Player 1 register and play with x
 * Player 2 register and play with o
 
+Cases :
+* You choose where to play my naming a case with a letter for the column (A, B, C) and a number for the row (1, 2, 3) like "B3"
+
 There is 8 ways to win :
 * Align 3 identical symbols horizontally (3 possibilities)
 * Same but vertical (3 possibilities)
@@ -38,6 +40,8 @@ Drawn :
 Something to get into the mood [here](https://www.youtube.com/watch?v=BdLSJAAF-kc)
 
 ![](https://media1.giphy.com/media/vJfWmEboAQS1YXQe6a/giphy.gif?cid=ecf05e47rsbj6990pm08o46xmmpkovfclz71zbezhn8oslls&rid=giphy.gif&ct=g)
+
+HAVE FUN AND GOOD LUCK ! 
 
 
 ### Authors Details::
