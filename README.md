@@ -34,7 +34,7 @@ There is 8 ways to win :
 * You do the same but on diagonal (2 possibilities)
 
 Drawn :
-* If the two players are on the same level and it's not possible to align 3 identical symbols on the board. 
+* If the two players are on the same level, it's not possible to align 3 identical symbols on the board and the board is full.
 
 ### Ready to play ?  
 Something to get into the mood [here](https://www.youtube.com/watch?v=BdLSJAAF-kc)
