@@ -44,9 +44,9 @@ Something to get into the mood [here](https://www.youtube.com/watch?v=BdLSJAAF-k
 HAVE FUN AND GOOD LUCK ! 
 
 
-### Authors Details::
+### Authors Details:
 
-👤 **Vocal_15**
+👤  **half of the famous Vocal_15**
 
 -   [@Bretchaa](https://github.com/Bretchaa)
 -   [@linahello](https://github.com/linahello)
